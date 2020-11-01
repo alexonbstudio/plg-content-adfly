@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.3" type="plugin" group="content" method="upgrade">
+<extension version="3.9" type="plugin" group="content" method="upgrade">
 	<name>Content - Adf.ly URL Shortener</name>
 	<author>Nordmograph</author>
 	<creationDate>January 2015</creationDate>
-	<copyright>Copyright (C) 2010 - 2015 Nordmograph. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2019-2020 Alexonbstudio. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>contact@nordmograph.com</authorEmail>
 	<authorUrl>http://www.nordmograph.com/extensions</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description><![CDATA[PLG_ADFLY_XML_DESCRIPTION]]></description>
 	<files>
 		<filename plugin="adfly">adfly.php</filename>
