@@ -20,8 +20,8 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="key" type="text" default="cfea8b20afcad652f6608d1e88ed08b6" label="PLG_ADFLY_KEY_LABEL" description="PLG_ADFLY_KEY_DESC" />
-				<field name="uid" type="text" default="8726147" label="PLG_ADFLY_UID_LABEL" description="PLG_ADFLY_UID_DESC" />
+				<field name="key" type="text" default="f95d893e4fae09e7d098dd9c0ce736ef" label="PLG_ADFLY_KEY_LABEL" description="PLG_ADFLY_KEY_DESC" />
+				<field name="uid" type="text" default="4162904" label="PLG_ADFLY_UID_LABEL" description="PLG_ADFLY_UID_DESC" />
 				<field name="domain" type="radio" default="adf.ly" label="PLG_ADFLY_DOMAIN_LABEL" description="PLG_ADFLY_DOMAIN_DESC" class="radio btn-group">
 					<option value="adf.ly">adf.ly</option>
 					<option value="q.gs">q.gs</option>

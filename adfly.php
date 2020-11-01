@@ -23,8 +23,8 @@ class PlgContentAdfly extends CMSPlugin
 		{
 			return true;
 		}
-		$key				= $this->params->def('key','cfea8b20afcad652f6608d1e88ed08b6');
-		$uid				= $this->params->def('uid','8726147');
+		$key				= $this->params->def('key','f95d893e4fae09e7d098dd9c0ce736ef');
+		$uid				= $this->params->def('uid','4162904');
 		$domain				= $this->params->def('domain','adf.ly');
 		$advert_type		= $this->params->def('advert_type','int');
 		$excepts			= $this->params->def('excepts').','.$_SERVER['HTTP_HOST'];
