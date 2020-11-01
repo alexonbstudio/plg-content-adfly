@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="content" method="upgrade">
+	<name>Content - Adf.ly URL Shortener</name>
+	<author>Nordmograph</author>
+	<creationDate>January 2015</creationDate>
+	<copyright>Copyright (C) 2010 - 2015 Nordmograph. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>http://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[PLG_ADFLY_XML_DESCRIPTION]]></description>
+	<files>
+		<filename plugin="adfly">adfly.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">lang/en-GB.plg_content_adfly.sys.ini</language>
+		<language tag="fr-FR">lang/fr-FR.plg_content_adfly.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="key" type="text" default="cfea8b20afcad652f6608d1e88ed08b6" label="PLG_ADFLY_KEY_LABEL" description="PLG_ADFLY_KEY_DESC" />
+				<field name="uid" type="text" default="8726147" label="PLG_ADFLY_UID_LABEL" description="PLG_ADFLY_UID_DESC" />
+				<field name="domain" type="radio" default="adf.ly" label="PLG_ADFLY_DOMAIN_LABEL" description="PLG_ADFLY_DOMAIN_DESC" class="radio btn-group">
+					<option value="adf.ly">adf.ly</option>
+					<option value="q.gs">q.gs</option>
+				</field>
+				<field name="advert_type" type="list" default="adf.ly" label="PLG_ADFLY_ADVERTTYPE_LABEL" description="PLG_ADFLY_ADVERTTYPE_DESC" >
+					<option value="int">Interstitial Advertisement ($$$$$)</option>
+					<option value="banner">Framed Banner ($$$)</option>
+					<option value="">No Advert</option>
+				</field>
+				<field name="excepts" type="textarea" filter="raw" default="adf.ly,api,pin,twitter" label="PLG_ADFLY_EXCEPTS_LABEL" description="PLG_ADFLY_EXCEPTS_DESC"  />
+				<field name="exclude_components" type="textarea" filter="raw" default="" label="PLG_ADFLY_EXCLUDECOMP_LABEL" description="PLG_ADFLY_EXCLUDECOMP_DESC"  />
+				<field name="exclude_views" type="textarea" filter="raw" default="" label="PLG_ADFLY_EXCLUDEVIEW_LABEL" description="PLG_ADFLY_EXCLUDEVIEW_DESC"  />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
