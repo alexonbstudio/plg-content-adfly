@@ -3,12 +3,18 @@
  * @package		Joomla.Plugin
  * @subpackage	Content.adfly
  * @copyright	Copyright (C) 2010 - 2015 Nordmograph.com, Inc. All rights reserved.
+ * @copyright	Copyright (C) 2019 - 2020 AlexonbStudio. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 // no direct access
 defined('_JEXEC') or die;
+
+use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
+
 //jimport('joomla.plugin.plugin');
-class plgContentAdfly extends JPlugin
+#class plgContentAdfly extends JPlugin
+class PlgContentAdfly extends CMSPlugin
 {
 	public function onContentPrepare($context, &$article, &$params, $page = 0)
 	{
@@ -25,7 +31,7 @@ class plgContentAdfly extends JPlugin
 		$excepts			= explode(',',$excepts);
 		$exclude_components	= $this->params->def('exclude_components');
 		$exclude_views		= $this->params->def('exclude_views');
-		$jinput 			= JFactory::getApplication()->input;
+		$jinput 			= Factory::getApplication()->input;
 		$component 			= $jinput->get('option');
 		$view 				= $jinput->get('view');
 		if( strpos($exclude_components,$component) !== false || strpos($exclude_views,$view) !== false )
