@@ -40,7 +40,7 @@
 	</config>
 	
 	<updateservers>
-		<server type="collection">https://raw.githubusercontent.com/alexonbstudio/joomla-update/master/extention.xmlhttps://example.com/list.xml</server>
+		<server type="collection">https://raw.githubusercontent.com/alexonbstudio/joomla-update/master/extention.xml</server>
 		<server type="extension" priority="2" name="Plugin system shortcode Updates">https://raw.githubusercontent.com/alexonbstudio/joomla-update/master/public/plugin-content-adfly.xml</server>
 	</updateservers>
 	
